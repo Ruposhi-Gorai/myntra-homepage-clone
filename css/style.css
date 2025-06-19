@@ -9,7 +9,9 @@ a {
 
 .main {
   width: 100%;
+  position: relative;
 }
+
 .head-section {
   display: flex;
   width: 100%;
@@ -46,7 +48,7 @@ a {
   border: none;
   background-color: #f5f5f6;
 }
-.menu ul,
+.menu>ul,
 .listing {
   display: flex;
   list-style: none;
@@ -58,7 +60,7 @@ a {
   font-size: 10px;
   font-weight: 600;
 }
-.menu ul li a {
+.menu>ul>li>a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -67,6 +69,7 @@ a {
   font-weight: bold;
   padding: 10px 15px;
   box-sizing: border-box;
+  position: relative;
 }
 .listing a {
   text-transform: capitalize;
@@ -77,6 +80,74 @@ a {
   font-weight: 600;
   padding: 0px 10px;
   box-sizing: border-box;
+}
+.mega_menu{
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 8%;
+  flex-basis: 60%;
+  background-color: white;
+  padding: 20px 40px;
+  text-align: left;
+  gap: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+
+
+}
+.mega_box6{
+  width: 500px;
+  position: relative;
+}
+.studio_image{
+  width: 100%;
+  position:absolute;
+  left: 70%;
+  
+}
+.studio_image img{
+  width: 100%;
+}
+.mega_box1 ul{
+list-style: none;
+line-height: 28px;
+}
+.mega_box1 ul li h2{
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #EE5F73;
+
+}
+.menu>ul>li:hover .mega_menu{
+opacity: 1;
+visibility: visible;
+
+}
+.social_icons_box {
+  position: fixed;
+  top: 250px;
+  right: 0px;
+}
+.social_icon {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+ margin: 10px 0px;
+  box-sizing: border-box;
+  border-radius: 50px;
+   background-color: #1D85FC;
+}
+.social_icon i{
+  color:white ;
+}
+.whatsapp{
+  background-color: green;
 }
 .poster {
   flex-basis: 100%;
